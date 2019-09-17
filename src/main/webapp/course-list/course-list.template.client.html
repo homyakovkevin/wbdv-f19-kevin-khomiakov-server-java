@@ -2,33 +2,33 @@
 <html>
 
 <head>
-    <title>Home Page</title>
-    <link href="homepage.template.client.css" rel="stylesheet">
+    <title>Course List</title>
+    <link href="course-list.style.client.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0ec98957f0.js"></script>
 </head>
 
-<body style="background-color: #F5F5F5">
+<body>
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-dark shadow-sm row" style="background-color: #1A7BD9">
+        <nav class="navbar navbar-expand-md navbar-dark shadow-sm row bg-dark" >
             <div class="col-2 col-sm-1 col-md-1">
-                <button style="border:none;background:none" class="wbdv-field wbdv-hamburger">
-                    <i class="fas fa-bars fa-2x" style="color: #FFFFFF"></i>
+                <button class="wbdv-field wbdv-hamburger">
+                    <i class="fas fa-bars fa-2x"></i>
                 </button>
             </div>
             <div class="col-0 col-sm-3 col-md-3 collapse navbar-collapse">
-                <a class="navbar-brand wbdv-label wbdv-course-manager" id="course-manager" style="color: #FFFFFF; font-weight: bold;">Course Manager</a>
+                <a class="navbar-brand wbdv-label wbdv-course-manager">Course Manager</a>
             </div>
             <div class="col-8 col-sm-7 col-md-7">
-                <input class="form-control wbdv-field wbdv-new-course" placeholder="New Course Title" type="text" style="font-style:italic">
+                <input class="form-control wbdv-field wbdv-new-course" placeholder="New Course Title" type="text">
             </div>
             <div class="col-2 col-sm-1 col-md-1">
-                <button style="border:none;background:none" class="wbdv-button wbdv-add-course">
+                <button class="wbdv-button wbdv-add-course">
                     <i href="#" class="fas fa-plus-circle fa-2x"></i>
                 </button>
             </div>
         </nav>
-        <div class="row" style="background-color: #F5F5F5">
+        <div class="row title-row">
             <div class="container col-lg-9 col-sm-12 table-responsive">
                 <table class="table">
                     <thead>
@@ -37,37 +37,37 @@
                             <th scope="col bdv-header wbdv-title">Title</th>
                             <th scope="col" class="hidden wbdv-header wbdv-owner">
                                 Owned By
-                                <button style="border:none;background:none">
+                                <button class="btn-title">
                                     <i class="fas fa-caret-down"></i>
                                 </button>
                             </th>
                             <th scope="col" class="hidden wbdv-header wbdv-last-modified">Last modified by me</th>
                             <th scope="col" class="hidden">
-                                <button style="border:none;background:none">
+                                <button class="btn-title">
                                     <i class="fas fa-grip-horizontal wbdv-button wbdv-grid-layout"></i>
                                 </button>
                             </th>
                             <th scope="col" class="hidden">
-                                <button style="border:none;background:none">
+                                <button class="btn-title">
                                     <i class="fas fa-sort-alpha-down wbdv-header wbdv-sort"></i>
                                 </button>
                             </th>
                         </tr>
                     </thead>
-                    <tbody style="background-color: #FFFFFF">
+                    <tbody id="table-body">
                         <tr class="wbdv-row wbdv-course">
                             <th scope="row">
                                 <a href="#">
                                     <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
                             </th></a>
-                            <td> <a class="wbdv-row wbdv-title" href="#" style="color: #000000">CS5500 Software Engineering Graduate
+                            <td> <a class="wbdv-row wbdv-title" href="../course-editor/course-editor.template.client.html">CS5500 Software Engineering Graduate
                                 </a></td>
                             <td class="hidden wbdv-row wbdv-owner">me</td>
                             <td class="hidden wbdv-row wbdv-modified-date">6:45 PM</td>
                             <td></td>
                             <td></td>
                             <td>
-                                <button style="border:none;background:none" class="wbdv-row wbdv-button wbdv-delete">
+                                <button class="wbdv-row wbdv-button wbdv-delete">
                                     <i class="fas fa-times"></i>
                                 </button>
                             </td>
@@ -76,14 +76,14 @@
                             <th scope="row"><a href="#">
                                     <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
                             </th></a>
-                            <td> <a class="wbdv-row wbdv-title" href="#" style="color: #000000">CS4550 Software Engineering Undergraduate</td>
+                            <td> <a class="wbdv-row wbdv-title" href="../course-editor/course-editor.template.client.html">CS4550 Software Engineering Undergraduate</td>
                             </a>
                             <td class="hidden wbdv-row wbdv-owner">me</td>
                             <td class="hidden wbdv-row wbdv-modified-date">6:45 PM</td>
                             <td></td>
                             <td></td>
                             <td>
-                                <button style="border:none;background:none" class="wbdv-row wbdv-button wbdv-delete">
+                                <button class="wbdv-row wbdv-button wbdv-delete">
                                     <i class="fas fa-times"></i>
                                 </button>
                             </td>
@@ -92,14 +92,14 @@
                             <th scope="row"><a href="#">
                                     <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
                             </th></a>
-                            <td> <a class="wbdv-row wbdv-title" href="#" style="color: #000000">CS4500 WebDev Undergraduate</td>
+                            <td> <a class="wbdv-row wbdv-title" href="../course-editor/course-editor.template.client.html">CS4500 WebDev Undergraduate</td>
                             </a>
                             <td class="hidden wbdv-row wbdv-owner">me</td>
                             <td class="hidden wbdv-row wbdv-modified-date">6:45 PM</td>
                             <td></td>
                             <td></td>
                             <td>
-                                <button style="border:none;background:none" class="wbdv-row wbdv-button wbdv-delete">
+                                <button class="wbdv-row wbdv-button wbdv-delete">
                                     <i class="fas fa-times"></i>
                                 </button>
                             </td>
@@ -108,14 +108,14 @@
                             <th scope="row"><a href="#">
                                     <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
                             </th></a>
-                            <td> <a class="wbdv-row wbdv-title" href="#" style="color: #000000">CS5610 WebDev Graduate</td>
+                            <td> <a class="wbdv-row wbdv-title" href="../course-editor/course-editor.template.client.html">CS5610 WebDev Graduate</td>
                             </a>
                             <td class="hidden wbdv-row wbdv-owner">me</td>
                             <td class="hidden wbdv-row wbdv-modified-date">6:45 PM</td>
                             <td></td>
                             <td></td>
                             <td>
-                                <button style="border:none;background:none" class="wbdv-row wbdv-button wbdv-delete">
+                                <button class="wbdv-row wbdv-button wbdv-delete">
                                     <i class="fas fa-times"></i>
                                 </button>
                             </td>
@@ -124,19 +124,19 @@
                             <th scope="row"><a href="#">
                                     <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
                             </th></a>
-                            <td> <a class="wbdv-row wbdv-title" href="#" style="color: #000000">CS5200 Intro to Databases</td>
+                            <td> <a class="wbdv-row wbdv-title" href="../course-editor/course-editor.template.client.html">CS5200 Intro to Databases</td>
                             </a>
                             <td class="hidden wbdv-row wbdv-owner">me</td>
                             <td class="hidden wbdv-row wbdv-modified-date">6:44 PM</td>
                             <td></td>
                             <td></td>
                             <td>
-                                <button style="border:none;background:none" class="wbdv-row wbdv-button wbdv-delete">
+                                <button class="wbdv-row wbdv-button wbdv-delete">
                                     <i class="fas fa-times"></i>
                                 </button>
                             </td>
                         </tr>
-                        <tr style="background-color: #F5F5F5">
+                        <tr class="title-row">
                             <td></td>
                             <th scope="row">
                                 Yesterday
@@ -151,19 +151,19 @@
                             <th scope="row"><a href="#">
                                     <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
                             </th></a>
-                            <td> <a class="wbdv-row wbdv-title" href="#" style="color: #000000">WEBDEV 2 - React <i class="fas fa-user-friends"></i></td>
+                            <td> <a class="wbdv-row wbdv-title" href="../course-editor/course-editor.template.client.html">WEBDEV 2 - React <i class="fas fa-user-friends"></i></td>
                             <td class="hidden wbdv-row wbdv-owner">me</td>
                             </a>
                             <td class="hidden wbdv-row wbdv-modified-date">May 4, 2018</td>
                             <td></td>
                             <td></td>
                             <td>
-                                <button style="border:none;background:none" class="wbdv-row wbdv-button wbdv-delete">
+                                <button class="wbdv-row wbdv-button wbdv-delete">
                                     <i class="fas fa-times"></i>
                                 </button>
                             </td>
                         </tr>
-                        <tr style="background-color: #F5F5F5">
+                        <tr class="title-row">
                             <td></td>
                             <th scope="row">
                                 Previous 7 days
@@ -178,14 +178,14 @@
                             <th scope="row"><a href="#">
                                     <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
                             </th></a>
-                            <td> <a class="wbdv-row wbdv-title" href="#" style="color: #000000">WEBDEV Syllabus <i class="fas fa-user-friends"></i></td>
+                            <td> <a class="wbdv-row wbdv-title" href="../course-editor/course-editor.template.client.html">WEBDEV Syllabus <i class="fas fa-user-friends"></i></td>
                             </a>
                             <td class="hidden wbdv-row wbdv-owner">me</td>
                             <td class="hidden wbdv-row wbdv-modified-date">May 3, 2018</td>
                             <td></td>
                             <td></td>
                             <td>
-                                <button style="border:none;background:none" class="wbdv-row wbdv-button wbdv-delete">
+                                <button class="wbdv-row wbdv-button wbdv-delete">
                                     <i class="fas fa-times"></i>
                                 </button>
                             </td>
@@ -194,14 +194,14 @@
                             <th scope="row"><a href="#">
                                     <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
                             </th></a>
-                            <td> <a class="wbdv-row wbdv-title" href="#" style="color: #000000">WEBDEV 1 - Javascript, Java, SQL <i class="fas fa-bowling-ball"></i> <i class="fas fa-user-friends"></i></td>
+                            <td> <a class="wbdv-row wbdv-title" href="../course-editor/course-editor.template.client.html">WEBDEV 1 - Javascript, Java, SQL <i class="fas fa-bowling-ball"></i> <i class="fas fa-user-friends"></i></td>
                             </a>
                             <td class="hidden wbdv-row wbdv-owner">me</td>
                             <td class="hidden wbdv-row wbdv-modified-date">May 3, 2018</td>
                             <td></td>
                             <td></td>
                             <td>
-                                <button style="border:none;background:none" class="wbdv-row wbdv-button wbdv-delete">
+                                <button class="wbdv-row wbdv-button wbdv-delete">
                                     <i class="fas fa-times"></i>
                                 </button>
                             </td>
@@ -212,7 +212,7 @@
         </div>
     </div>
     <div>
-        <button style="border:none;background:none;position: fixed; bottom: 20px; right: 20px;">
+        <button class="btn-plus-right">
             <i class="fas fa-plus-circle fa-4x">
             </i>
         </button>
