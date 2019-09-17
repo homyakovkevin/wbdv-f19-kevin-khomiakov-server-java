@@ -8,6 +8,10 @@ html {
 	color: #FFFFFF;
 }
 
+.wbdv-hamburger :hover {
+	color: black;
+}
+
 .wbdv-course-manager {
 	color: #FFFFFF !important;
 	font-weight: bold;
@@ -42,6 +46,10 @@ html {
 .btn-title {
 	border:none;
 	background:none;
+}
+
+.btn-title :hover {
+	color :black;
 }
 
 .btn-plus-right {
